@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Produits IT - Mon E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Mon E-commerce</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="produits.html">Produits</a>
+            <a href="contact.html">Contact</a>
+            <a href="mon-compte.html">Mon Compte</a>
+        </div>
+    </nav>
+
+    <!-- Filtres et catégories -->
+    <div class="filters-container">
+        <h2>Catégories</h2>
+        <div class="category-filters">
+            <button class="filter-btn active" data-category="all">Tous</button>
+            <button class="filter-btn" data-category="claviers">Claviers</button>
+            <button class="filter-btn" data-category="souris">Souris</button>
+            <button class="filter-btn" data-category="ecrans">Écrans</button>
+            <button class="filter-btn" data-category="accessoires">Accessoires</button>
+        </div>
+    </div>
+
+    <!-- Section des produits -->
+    <div class="products-container">
+        <div class="products-grid" id="products-grid">
+            <!-- Les produits seront chargés dynamiquement via PHP -->
+        </div>
+    </div>
+
+    <!-- Bouton flottant service client -->
+    <div class="chat-button" id="chat-button">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <!-- Modal du chat -->
+    <div class="chat-modal" id="chat-modal">
+        <div class="chat-header">
+            <h3>Service Client</h3>
+            <button class="close-chat" id="close-chat">&times;</button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Les messages s'afficheront ici -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Écrivez votre message...">
+            <button id="send-message">Envoyer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
