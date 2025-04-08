@@ -51,7 +51,6 @@ try {
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
         'Content-Type: application/json'
     ]);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 30); // Timeout après 30 secondes
 
     // Exécuter la requête
     $response = curl_exec($ch);
